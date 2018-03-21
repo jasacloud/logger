@@ -1,4 +1,7 @@
 <?PHP
+namespace Logger;
+use \Api\System as System;
+use \Api\Api as Api;
 /**
 	new Logger($_SERVER['DOCUMENT_ROOT']."/log/LOGGED.log", $_SERVER['PHP_SELF'].":".__LINE__."  ".$data);
 	new Logger("default", $_SERVER['PHP_SELF'].":".__LINE__."  ".$data);
