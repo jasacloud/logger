@@ -1,5 +1,4 @@
 <?PHP
-namespace Logger;
 /**
 	new Logger($_SERVER['DOCUMENT_ROOT']."/log/LOGGED.log", $_SERVER['PHP_SELF'].":".__LINE__."  ".$data);
 	new Logger("default", $_SERVER['PHP_SELF'].":".__LINE__."  ".$data);
