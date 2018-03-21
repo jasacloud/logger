@@ -1,18 +1,19 @@
 {
     "name": "jasacloud/logger",
-    "description": "Library for handle all logger to file or api request.",
-    "keywords": ["Jasacloud","Logger","Image","ImageServer"],
+    "description": "Library to handle logger request",
+    "keywords": ["Jasacloud", "Logger", "Library"],
     "type": "library",
-    "license": "MIT",
-    "require": {
-        "php": ">=7.0"
-    },
+    "homepage": "https://github.com/jasacloud/logger",
+    "license": "GPL-3.0-or-later",
     "authors": [{
-        "name": "Dwi BudUt",
-        "email": "dwi@jasacloud.com",
-        "homepage": "https://www.jasacloud.com"
-    }],
-    "homepage": "http://github.com/jasacloud/logger",
+	    "name": "Dwi BudUt",
+	    "email": "dwi@jasacloud.com",
+	    "homepage": "https://www.jasacloud.com",
+	    "role": "Developer"
+	}],
+    "require": {
+        "php": ">=5.4"
+    },
     "autoload": {
         "psr-0": {
             "Logger": "src/"
