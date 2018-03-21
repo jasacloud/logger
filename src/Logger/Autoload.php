@@ -52,4 +52,4 @@ class Logger_Autoload
 if (!class_exists('Logger_Autoload')) {
     require dirname(__FILE__) . '/Autoload.php';
 }
-Logger_Autoload::register(true);
+Logger_Autoload::register();
