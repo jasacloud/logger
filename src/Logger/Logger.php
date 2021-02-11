@@ -13,7 +13,7 @@ class Logger extends System{
 		if(defined("LOG_STD") && $data){
 			if(constant("LOG_STD")){
 				$stdout = fopen("php://stdout","w");
-				fwrite($stdout, "[".parent::getDateTime2()."]" . " " . $data);
+				fwrite($stdout, "[".parent::getDateTime2()."]" . " " . $data . PHP_EOL);
 				fclose($stdout);
 			}
 		}
