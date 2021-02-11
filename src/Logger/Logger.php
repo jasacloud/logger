@@ -7,9 +7,16 @@
 class Logger extends System{
 	private $files;
 	private $username;
-	public function __construct($logfile="default",$data,$fmode="a+"){
+	public function __construct($logfile="default",$data=NULL,$fmode="a+"){
 		$default_root = LOG_ROOT."LOG".date('[Y-m-d]').".log";
 		$this->username = isset($_SESSION['s_username']) ? $_SESSION['s_username'] : "undefined";
+		if(defined("LOG_STD") && $data){
+			if(constant("LOG_STD")){
+				$stdout = fopen("php://stdout","w");
+				fwrite($stdout, "[".parent::getDateTime2()."]" . " " . $data);
+				fclose($stdout);
+			}
+		}
 		if($logfile=="default"||$logfile==NULL){
 			$logfile=$default_root;
 		}
